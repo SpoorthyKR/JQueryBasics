@@ -1,0 +1,42 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+ 
+<!-- Javascript -->
+<script type="text/javascript">
+$(document).ready(function (){
+    /* select elements and assign to variables */
+    var t1 = $("#text1"), t2 = $("#text2"), t3 = $("#text3");
+    var b1 = $("#btn1"), b2 = $("#btn2"), b3 = $("#btn3"), b4 = $("#btn4");
+ 
+    /* bind click event */
+    b1.click(function(){    
+        t1.css("color", "orange");       /* change color of text1 to orange */
+    });    
+ 
+    b2.click(function(){    
+        t2.css("font-style", "italic");  /* change font size of text1 to 18px */
+    });    
+ 
+    b3.click(function(){    
+        /* change text of text3 */
+        t3.text("George did not give them back car and house"); 
+        t3.css("font-size", "20px");
+    });    
+ 
+    b4.click(function(){    
+        t1.removeAttr("style"); /* remove all css */
+        t2.removeAttr("style");
+        t3.removeAttr("style");
+        t3.text("George borrows car and house from them");
+    });    
+});
+</script>
+ 
+<!-- HTML -->
+<a name="#id-selector"></a>
+<div id="text1">Spoorthy has a car</div>
+<div id="text2">Shiv has a house</div>
+<div id="text3">Spoorthy borrows car and house from them</div>
+<button type="button" id="btn1">Select text1</button>&nbsp;
+<button type="button" id="btn2">Select text2</button>&nbsp; 
+<button type="button" id="btn3">Select text3</button>&nbsp; 
+<button type="button" id="btn4">Reset</button>
