@@ -26,7 +26,7 @@ $(document).ready(function (){
         t1.removeAttr("style"); /* remove all css */
         t2.removeAttr("style");
         t3.removeAttr("style");
-        t3.text("George borrows car and house from them");
+        t3.text("Spoorthy borrows car and house from them");
     });    
 });
 </script>
